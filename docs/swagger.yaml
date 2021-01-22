@@ -1,0 +1,24 @@
+info:
+  contact: {}
+paths:
+  /beer:
+    get:
+      description: Get Users
+      parameters:
+      - description: Name
+        in: query
+        name: name
+        type: string
+      - description: Age
+        in: query
+        name: age
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Retrieves users from mongodb
+swagger: "2.0"
